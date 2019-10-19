@@ -3,6 +3,7 @@ const Hapi = require('@hapi/hapi')
 const plugins = require('./plugins')
 const routes = require('./routes')
 
+// Start the server
 async function startServer () {
   const server = Hapi.Server({
     port: process.env.PORT || 3000
