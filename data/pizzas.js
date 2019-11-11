@@ -40,7 +40,7 @@ async function getRecent () {
     order: [['created', 'DESC']],
     limit: 4,
     raw: true
-  }).then(debriefPizzaFromDb)
+  }).then(debriefPizzasFromDb)
 
   // const recentPizzas = orderBy(pizzas, ['created'], ['desc'])
   // return values(recentPizzas).splice(0, 5)
