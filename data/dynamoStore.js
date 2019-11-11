@@ -40,7 +40,7 @@ async function getAllItems (table) {
 async function getItem (table, idKey, id) {
     return new Promise((resolve, reject) => {
         const params = {
-            TableName, table,
+            TableName: table,
             Key: {
                 [idKey]: id
             }
